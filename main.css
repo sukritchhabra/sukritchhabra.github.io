@@ -1,0 +1,54 @@
+.jumbotron {
+    width: 100%;
+    height: 40vw;
+    margin-bottom: 0px;
+    background-image: url('imgs/jumbo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+/*    background-color: #2887CA;*/
+    padding-bottom: 0px;
+}
+
+.thumbnail img{
+    height: 10vh;
+    width: auto;
+}
+
+.thumbnail {
+    padding: 0px;
+    border-style: none;
+    border-width: 0px;
+    box-shadow: none;
+}
+
+.navbar ul li {
+    display: inline;
+    opacity: 1;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-right: 2vw;
+   /* width: 100%;
+    height: 7%;*/
+
+}
+
+.navbar ul {
+    margin-top: 1vw;
+    float: right !important;
+}
+
+nav {
+    background-color: none !important;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: none !important;
+
+}
+
+.navbar-fixed-top {
+    /*background: linear-gradient(to bottom, #ffffff, #fafafa);*/
+}

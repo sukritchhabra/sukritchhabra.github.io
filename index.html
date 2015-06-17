@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap-theme.css">
+
+        <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>                                <!-- Bootstrap JS               -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    <!-- jQuery                     -->
+        <script src="parallax/parallax.js"></script>                                                <!-- Parallax JS                -->
+        <script src="smoothScroll/smooth-scroll.js"></script>                                       <!-- Smooth Scroll to Anchor JS -->
+        <script src="script.js"></script>                                                           <!-- Our JS                     -->
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <ul>
+                    <li><a data-scroll="" href="#bazinga">Home</a></li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+        </div>
+
+
+        <!--
+        div.container>section#experience>h3>div.container>div.row>div.col-md-4.thumbnail*3
+        -->
+        
+        <div class="container">
+            <section id="education">
+                <h3>Education</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 thumbnail">
+                            <img src="http://archived.materials.drexel.edu/News/Logos/drexel-horz-blue.png" alt="">
+                        </div>
+
+                        <div class="col-md-4 thumbnail">
+                            <img src="http://manipal.edu/dam/manipal/mu/images/logos/mu-logo.png/jcr:content/renditions/cq5dam.thumbnail.196.56.png" alt="">
+                        </div>
+
+                        <div class="col-md-4 thumbnail">
+                            <img src="http://www.tsrs.org/wp-content/uploads/2013/06/logo_tsrs4.png" alt="">
+                        </div>
+                        
+                        <div class="col-md-4 col-md-offset-1">
+                            <h1>2013-2016</h1>
+                        </div>
+                            
+                        <div class="col-md-4">
+                            <h1>2013-2016</h1>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h1>2013-2016</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="experience">
+                <h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 thumbnail"></div>
+                            <div class="col-md-4 thumbnail"></div>
+                            <div class="col-md-4 thumbnail"></div>
+                        </div>
+                    </div>
+                </h3>
+            </section>
+        </div>
+
+
+
+      <script>
+          smoothScroll.init({
+              speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+              easing: 'Linear', // Easing pattern to use
+          });
+      </script>
+    </body>
+</html>
