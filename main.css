@@ -11,7 +11,7 @@
 }
 
 .thumbnail img{
-    height: 10vh;
+    height: 10vh !important;
     width: auto;
 }
 
@@ -51,4 +51,14 @@ nav {
 
 .navbar-fixed-top {
     /*background: linear-gradient(to bottom, #ffffff, #fafafa);*/
+}
+
+.thumbnail h2 {
+    text-align: center;
+}
+
+#education .thumbnail img:hover {
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
 }
