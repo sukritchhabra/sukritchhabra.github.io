@@ -4,14 +4,14 @@
 
 $(document).ready(function() {
     var $window = $(window);
-    var scrollTime = 0.4;
-    var scrollDistance = 150;
+    var scrollTime = 0.1;
+    var scrollDistance = 70;
 
     $window.on("mousewheel DOMMouseScroll", function(event){
 
         event.preventDefault();
 
-        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+        var delta = event.originalEvent.wheelDelta/80 || -event.originalEvent.detail/3;
         var scrollTop = $window.scrollTop();
         var finalScroll = scrollTop - parseInt(delta*scrollDistance);
 

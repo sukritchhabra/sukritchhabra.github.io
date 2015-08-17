@@ -80,6 +80,12 @@ section a:focus {
     transform: scale(1.1,1.1); /* Standard syntax */
 }
 
+#Projects .row {
+    padding-bottom: 5em;
+    margin-top: 2em;
+    border-bottom: solid 1px #F4F4F4;
+}
+
 .projectLinks {
     float: right;
     font-size: 1.4em;
@@ -140,4 +146,8 @@ span.more {
 
 .lessButton {
     display: none;
+}
+
+.brackets {
+    color: #D8D8DC;
 }
