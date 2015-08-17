@@ -1,10 +1,13 @@
 <html>
     <head>
+        <title>Sukrit Chhabra</title>
         <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
         <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap-theme.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>                                <!-- Bootstrap JS               -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    <!-- jQuery                     -->
+        <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>                                <!-- Bootstrap JS               -->
         <script src="parallax/parallax.js"></script>                                                <!-- Parallax JS                -->
         <script src="smoothScroll/smooth-scroll.js"></script>                                       <!-- Smooth Scroll to Anchor JS -->
         <script src="script.js"></script>                                                           <!-- Our JS                     -->
@@ -62,11 +65,47 @@
         </div>
 
         <div class="container">
-            <section id="about">
-                <h3></h3>
+            <section id="Projects">
+                <h1>Projects</h1>
                 <div class="container">
                     <div class="row">
-                        
+                        <div class="projectLinks">
+                            <a href="https://github.com/thomaspark/snowball" target="_blank"><span class="fa fa-github"></span></a>
+                            <a href=""><span class="fa fa-wordpress"></span></a>
+                        </div>
+
+                        <h2 class="projectTitle"><a href="http://snowball.openhtml.org" target="_blank">Snowball</a></h2>
+                        <h4 class="projectDuration">March 2015 - September 2015</h4>
+
+                        <div class="projectImage">
+                            <a href="http://snowball.openhtml.org" target="_blank"><img src="imgs/snowballScreenshot.jpg" alt=""></a>
+                        </div>
+
+                        <div class="projectBody">
+                            <h3>Description</h3>
+                            <div class="description">
+                                <p>
+                                    <b>Snowball</b> is <i>WordPress plugin</i> that makes it possible for anyone to create immersive articles for the web.
+                                    Snowball tries to hit the sweet spot between <u><i>easy Graphical Editors</i></u> and <u><i>powerful Code Editors</i></u> giving a user complete control over the customization of a webpage while maintining enough abstraction to not make the development process too overwhelming.
+                                </p>
+                            </div>
+
+                            <h3>Title built under</h3>
+                            <div class="builtAs">Research Assistant and Web Developer, Drexel University</div>
+
+                            <button class="more-less-button moreButton">More</button>
+                            <span class="more">
+                                <h3>Purpose</h3>
+                                <div class="purpose">
+                                    <ul>
+                                        <li>Provide journalists witha tool that can help them create beautiful article without having intense programming knowledge</li>
+                                        <li>Bridge the gap between WYSIWYG Editors and powerful Code Editors.</li>
+                                        <li>Hold a workshop/study with journalists.</li>
+                                    </ul>
+                                </div>
+                            </span>
+                            <button class="more-less-button lessButton">Less</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -75,7 +114,7 @@
 
       <script>
           smoothScroll.init({
-              speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+              speed: 1000, // Integer. How fast to complete the scroll in milliseconds
               easing: 'Linear', // Easing pattern to use
           });
       </script>
