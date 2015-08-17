@@ -10,6 +10,7 @@
         <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>                                <!-- Bootstrap JS               -->
         <script src="parallax/parallax.js"></script>                                                <!-- Parallax JS                -->
         <script src="smoothScroll/smooth-scroll.js"></script>                                       <!-- Smooth Scroll to Anchor JS -->
+        <script src="https://cdn.rawgit.com/sukritchhabra/opacityChangeOnScroll/master/opacityChangeOnScroll.js"></script>
         <script src="script.js"></script>                                                           <!-- Our JS                     -->
 
 
@@ -23,8 +24,8 @@
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <ul>
-                    <li><a data-scroll="" href="#bazinga">Home</a></li>
-                    <li>About</li>
+                    <li><a data-scroll="" href="#education">Education</a></li>
+                    <li><a data-scroll="" href="#projects">Projects</a></li>
                     <li>Skills</li>
                     <li>Experience</li>
                     <li>Contact</li>
@@ -65,7 +66,7 @@
         </div>
 
         <div class="container">
-            <section id="Projects">
+            <section id="projects">
                 <h1>Projects</h1>
                 <div class="container">
                     <div class="row">
@@ -93,7 +94,7 @@
                             <h3>Title built under</h3>
                             <div class="builtAs">Research Assistant and Web Developer, Drexel University</div>
 
-                            <button class="more-less-button moreButton">More</button>
+                            <button class="more-less-button moreButton">More about this project</button>
                             <span class="more">
                                 <h3>Purpose</h3>
                                 <div class="purpose">
@@ -108,6 +109,13 @@
                         </div>
                     </div>
 
+                    <div class="row showButton">
+                        <div>
+                            <button class="showOthers">View other projects</button>
+                        </div>
+                    </div>
+
+                    <span class="othersOfType">
                     <div class="row">
                         <div class="projectLinks">
                             <a href="https://github.com/sukritchhabra/opacityChangeOnScroll" target="_blank"><span class="fa fa-github"></span></a>
@@ -137,7 +145,7 @@
                                 </p>
                             </div>
 
-                            <button class="more-less-button moreButton">More</button>
+                            <button class="more-less-button moreButton">More about this project</button>
                             <span class="more">
                                 <h3>Purpose</h3>
                                 <div class="purpose">
@@ -151,9 +159,18 @@
                             <button class="more-less-button lessButton">Less</button>
                         </div>
                     </div>
+                    </span>
+
+                    <div class="row hideButton">
+                        <div>
+                            <button class="hideOthers">Hide projects</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
+
+
 
 
       <script>

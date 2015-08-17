@@ -2,16 +2,19 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.navbar {
+    margin-bottom: 0px;
+    background-color: none !important;
+    min-height: 0px;
+}
+
 .navbar ul li {
     display: inline;
     opacity: 1;
     color: white;
-    font-size: 2vw;
+    font-size: 1vw;
     font-weight: bold;
     margin-right: 2vw;
-   /* width: 100%;
-    height: 7%;*/
-
 }
 
 .navbar ul {
@@ -23,14 +26,12 @@ nav {
     background-color: none !important;
 }
 
-.navbar {
-    margin-bottom: 0px;
-    background-color: none !important;
 
-}
-
-.navbar-fixed-top {
-    /*background: linear-gradient(to bottom, #ffffff, #fafafa);*/
+nav a,
+nav a:hover,
+nav a:focus {
+    color: white;
+    text-decoration: none;
 }
 
 .jumbotron {
@@ -46,13 +47,18 @@ nav {
 }
 
 section {
+    padding-top: 5em;
     margin-bottom: 2em;
 }
 
 section a,
-section a:hover,
 section a:focus {
     color: black;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #0E70A7;
     text-decoration: none;
 }
 
@@ -80,10 +86,14 @@ section a:focus {
     transform: scale(1.1,1.1); /* Standard syntax */
 }
 
-#Projects .row {
+#projects .row {
     padding-bottom: 5em;
     margin-top: 2em;
     border-bottom: solid 1px #F4F4F4;
+}
+
+.projectTitle {
+    font-weight: bolder;
 }
 
 .projectLinks {
@@ -97,6 +107,7 @@ section a:focus {
 }
 
 .projectLinks span:hover {
+    color: black;
     opacity: 0.9;
 }
 
@@ -132,8 +143,8 @@ span.more {
 .more-less-button {
     border: none;
     border-radius: 3px;
-    margin: 0px auto;
-    width: 50px;
+    margin: 2em auto 0 auto;
+    width: 12em;
     display: block;
 }
 
@@ -145,6 +156,48 @@ span.more {
 }
 
 .lessButton {
+    display: none;
+}
+.showButton {
+    border: none !important;
+}
+
+.showOthers {
+    border: none;
+    border-radius: 3px;
+    margin: 2em auto 0 auto;
+    width: 12em;
+    display: block;
+}
+
+.showOthers:hover {
+    background-color: #0A8307;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.hideButton {
+    display: none;
+    border: none !important;
+}
+
+.hideOthers {
+    border: none;
+    border-radius: 3px;
+    margin: 2em auto 0 auto;
+    width: 12em;
+    display: block;
+}
+
+.hideOthers:hover {
+    background-color: #0A8307;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.othersOfType {
     display: none;
 }
 

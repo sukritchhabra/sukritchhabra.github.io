@@ -7,6 +7,37 @@ $(document).ready(function() {
     var scrollTime = 0.1;
     var scrollDistance = 70;
 
+    var previousScroll = 0;
+    var changeNavColor = 1;
+    var navChange = $('#education').offset().top;
+    navChange = navChange - 68;
+    navChange = Math.floor(navChange);
+
+    $(document).on('scroll', function(event) {
+        var currentScroll = $(window).scrollTop();
+
+        if(currentScroll <= previousScroll && changeNavColor == 0) {
+            if(currentScroll < navChange) {
+                $(document).trigger('navTransparent');
+                changeNavColor = 1;
+            }
+        } else {
+            if(currentScroll > navChange && changeNavColor == 1) {
+                $(document).trigger('navBlack');
+                changeNavColor = 0;
+            }
+        }
+        previousScroll = currentScroll;
+    });
+
+    $(document).on('navTransparent', function() {
+        $('nav').css('background-color', 'transparent');
+    });
+
+    $(document).on('navBlack', function() {
+        $('nav').css('background-color', '#111');
+    });
+
     $window.on("mousewheel DOMMouseScroll", function(event){
 
         event.preventDefault();
@@ -22,7 +53,7 @@ $(document).ready(function() {
             });
 
     });
-    
+
     $('.moreButton').on('click', function(event) {
         $(this).siblings('.more').slideToggle('400', function() {
             $(this).css('display', 'block');
@@ -39,5 +70,17 @@ $(document).ready(function() {
             $(this).css('display', 'block');
         });
         $(this).slideToggle('100');
+    });
+
+    $('.showOthers').on('click', function(event) {
+        $(this).closest('.showButton').siblings('.othersOfType').slideToggle('100');
+        $(this).closest('.showButton').siblings('.hideButton').slideToggle('100')
+        $(this).closest('.showButton').fadeOut('100');
+    });
+
+    $('.hideOthers').on('click', function(event) {
+        $(this).closest('.hideButton').siblings('.othersOfType').slideToggle('100');
+        $(this).closest('.hideButton').siblings('.showButton').slideToggle('100')
+        $(this).closest('.hideButton').fadeOut('100');
     });
 });
