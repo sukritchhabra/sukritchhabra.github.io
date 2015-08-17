@@ -20,36 +20,31 @@
     </head>
 
     <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="homeButton">
+                <ul>
+                    <li><a data-scroll="" href="http://sukritchhabra.com/"><span class="fa fa-home"></span></a></li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <ul>
+                    <li><a data-scroll="" href="http://sukritchhabra.com/#education">Education</a></li>
+                    <li><a data-scroll="" href="http://sukritchhabra.com/#projects">Projects</a></li>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="container">
-            <section id="education">
-                <h1>Education</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 thumbnail">
-                            <a href="http://www.drexel.edu/" target="_blank"><img src="http://archived.materials.drexel.edu/News/Logos/drexel-horz-blue.png" alt=""></a>
-                            <h2>2013-2016</h2>
-                        </div>
-
-                        <div class="col-md-4 thumbnail">
-                            <a href="http://manipal.edu/mu.html" target="_blank"><img src="http://manipal.edu/dam/manipal/mu/images/logos/mu-logo.png/jcr:content/renditions/cq5dam.thumbnail.196.56.png" alt=""></a>
-                            <h2>2011-2013</h2>
-                        </div>
-
-                        <div class="col-md-4 thumbnail">
-                            <a href="http://www.tsrs.org/" target="_blank"><img src="http://www.tsrs.org/wp-content/uploads/2013/06/logo_tsrs4.png" alt=""></a>
-                            <h2>2001-2011</h2>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div id="jumbotron" class="jumbotron">
         </div>
 
         <div class="container">
-            <section id="projects">
+            <section id="projects" class="firstSection">
                 <h1>Projects</h1>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="snowball">
                         <div class="projectLinks">
                             <a href="https://github.com/thomaspark/snowball" target="_blank"><span class="fa fa-github"></span></a>
                             <a href=""><span class="fa fa-wordpress"></span></a>
@@ -84,19 +79,21 @@
                                         <li>Hold a workshop/study with journalists.</li>
                                     </ul>
                                 </div>
+
+                                <h3>Other People who were a part of this project</h3>
+                                <div class="people">
+                                    <ul>
+                                        <li><a href="http://www.andreaforte.net/"><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/2/000/244/0d4/25c273a.jpg" alt=""><p>Andrea Forte</p></a></li>
+                                        <li><a href="http://thomaspark.co/"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/280/1d4/12e7ade.jpg" alt=""><p>Thomas Park</p></a></li>
+                                        <li><a href=""><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/2/005/09c/02d/3f88cfa.jpg" alt=""><p>Brian Lee</p></a></li>
+                                    </ul>
+                                </div>
                             </span>
                             <button class="more-less-button lessButton">Less</button>
                         </div>
                     </div>
 
-                    <div class="row showButton">
-                        <div>
-                            <button class="showOthers">View other projects</button>
-                        </div>
-                    </div>
-
-                    <span class="othersOfType">
-                    <div class="row">
+                    <div class="row" id="opacityChangeOnScroll">
                         <div class="projectLinks">
                             <a href="https://github.com/sukritchhabra/opacityChangeOnScroll" target="_blank"><span class="fa fa-github"></span></a>
                         </div>
@@ -137,13 +134,6 @@
                                 </div>
                             </span>
                             <button class="more-less-button lessButton">Less</button>
-                        </div>
-                    </div>
-                    </span>
-
-                    <div class="row hideButton">
-                        <div>
-                            <button class="hideOthers">Hide projects</button>
                         </div>
                     </div>
                 </div>

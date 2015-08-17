@@ -22,6 +22,11 @@
 
     <body>
         <nav class="navbar navbar-fixed-top">
+            <div class="homeButton">
+                <ul>
+                    <li><a data-scroll="" href="#jumbotron"><span class="fa fa-home"></span></a></li>
+                </ul>
+            </div>
             <div class="container-fluid">
                 <ul>
                     <li><a data-scroll="" href="#education">Education</a></li>
@@ -33,7 +38,7 @@
             </div>
         </nav>
 
-        <div class="jumbotron">
+        <div id="jumbotron" class="jumbotron">
         </div>
 
 
@@ -42,7 +47,7 @@
         -->
 
         <div class="container">
-            <section id="education">
+            <section id="education" class="firstSection">
                 <h1>Education</h1>
                 <div class="container">
                     <div class="row">
@@ -69,7 +74,7 @@
             <section id="projects">
                 <h1>Projects</h1>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="snowball">
                         <div class="projectLinks">
                             <a href="https://github.com/thomaspark/snowball" target="_blank"><span class="fa fa-github"></span></a>
                             <a href=""><span class="fa fa-wordpress"></span></a>
@@ -104,6 +109,15 @@
                                         <li>Hold a workshop/study with journalists.</li>
                                     </ul>
                                 </div>
+
+                                <h3>Other People who were a part of this project</h3>
+                                <div class="people">
+                                    <ul>
+                                        <li><a href="http://www.andreaforte.net/"><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/2/000/244/0d4/25c273a.jpg" alt=""><p>Andrea Forte</p></a></li>
+                                        <li><a href="http://thomaspark.co/"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/280/1d4/12e7ade.jpg" alt=""><p>Thomas Park</p></a></li>
+                                        <li><a href=""><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/2/005/09c/02d/3f88cfa.jpg" alt=""><p>Brian Lee</p></a></li>
+                                    </ul>
+                                </div>
                             </span>
                             <button class="more-less-button lessButton">Less</button>
                         </div>
@@ -111,59 +125,7 @@
 
                     <div class="row showButton">
                         <div>
-                            <button class="showOthers">View other projects</button>
-                        </div>
-                    </div>
-
-                    <span class="othersOfType">
-                    <div class="row">
-                        <div class="projectLinks">
-                            <a href="https://github.com/sukritchhabra/opacityChangeOnScroll" target="_blank"><span class="fa fa-github"></span></a>
-                        </div>
-
-                        <h2 class="projectTitle"><a href="http://sukritchhabra.com/opacityChangeOnScroll/" target="_blank">opacityChangeOnScroll.js</a></h2>
-                        <h4 class="projectDuration">March 2015 - </h4>
-
-                        <div class="projectImage">
-                            <a href="http://sukritchhabra.com/opacityChangeOnScroll/" target="_blank"><img src="imgs/opacityScreenshot.jpg" alt=""></a>
-                        </div>
-
-                        <div class="projectBody">
-                            <h3>Description</h3>
-                            <div class="description">
-                                <p>
-                                    <b>opacityChangeOnScroll</b> is <i>Javascript/jQuery library</i> that makes it really easy for a user to bind the opacity<span class="brackets">(currently. Thinking about supporting other properties too)</span> of an element on the page to the scroll event by jsut assigning HTML classes.
-                                </p>
-                            </div>
-
-                            <h3>Language(s) Used</h3>
-                            <div class="description">
-                                <p>
-                                    <ul>
-                                        <li>Javascript (jQuery)</li>
-                                    </ul>
-                                </p>
-                            </div>
-
-                            <button class="more-less-button moreButton">More about this project</button>
-                            <span class="more">
-                                <h3>Purpose</h3>
-                                <div class="purpose">
-                                    <ul>
-                                        <li>Give users the abilty to bind the scroll event to css properties by just assigning HTML classes</li>
-                                        <li>Ease of use</li>
-                                        <li>Complete control over the change the scroll bring about useing <code>data-attributes</code></li>
-                                    </ul>
-                                </div>
-                            </span>
-                            <button class="more-less-button lessButton">Less</button>
-                        </div>
-                    </div>
-                    </span>
-
-                    <div class="row hideButton">
-                        <div>
-                            <button class="hideOthers">Hide projects</button>
+                            <a href="http://sukritchhabra.com/projects" target="_blank"><button class="showOthers">View all projects</button></a>
                         </div>
                     </div>
                 </div>

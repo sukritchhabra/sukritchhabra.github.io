@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     var previousScroll = 0;
     var changeNavColor = 1;
-    var navChange = $('#education').offset().top;
+    var navChange = $('.firstSection').offset().top;
     navChange = navChange - 68;
     navChange = Math.floor(navChange);
 
