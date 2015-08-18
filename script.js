@@ -71,16 +71,4 @@ $(document).ready(function() {
         });
         $(this).slideToggle('100');
     });
-
-    $('.showOthers').on('click', function(event) {
-        $(this).closest('.showButton').siblings('.othersOfType').slideToggle('100');
-        $(this).closest('.showButton').siblings('.hideButton').slideToggle('100')
-        $(this).closest('.showButton').fadeOut('100');
-    });
-
-    $('.hideOthers').on('click', function(event) {
-        $(this).closest('.hideButton').siblings('.othersOfType').slideToggle('100');
-        $(this).closest('.hideButton').siblings('.showButton').slideToggle('100')
-        $(this).closest('.hideButton').fadeOut('100');
-    });
 });
