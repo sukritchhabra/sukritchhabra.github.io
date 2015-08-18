@@ -209,6 +209,12 @@ span.more {
     color: white;
 }
 
+.showOthers .fa {
+    padding-left: 1em;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
 .hideButton {
     display: none;
     border: none !important;
