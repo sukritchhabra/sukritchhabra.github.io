@@ -77,38 +77,62 @@ section a:hover {
 }
 
 .container div {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 0 2em;
 }
 
-.thumbnail img{
+.name {
+    padding: 0 !important;
+}
+
+#education .thumbnail img{
     height: 7vh !important;
     width: auto;
 }
 
-.thumbnail {
+#education .thumbnail,
+#experience .thumbnail {
     padding: 0px;
-    border-style: none;
-    border-width: 0px;
+    border: none;
     box-shadow: none;
 }
 
-.thumbnail h2 {
+#education .thumbnail h2 {
     text-align: center;
 }
 
-#education .thumbnail:hover {
+#education .thumbnail:hover,
+#experience .thumbnail:hover {
     transform: scale(1.1,1.1); /* Standard syntax */
 }
 
 #projects .row {
     padding-bottom: 5em;
-    margin-top: 2em;
     border-bottom: solid 1px #F4F4F4;
 }
 
-.projectTitle {
+#projects .row:not(:first-of-type) {
+    margin-top: 2em;
+}
+
+.projectTitle,
+.jobTitle {
     font-weight: bolder;
+}
+
+.projectDuration,
+.jobDuration {
+    color: #6A6A6A;
+}
+
+.projectDuration:hover,
+.jobDuration:hover {
+    color: #628BCD;
+}
+
+.jobLocation {
+    display: inline-block;
+    width: 15em;
+    padding: 1em;
 }
 
 .projectLinks {
@@ -124,14 +148,6 @@ section a:hover {
 .projectLinks span:hover {
     color: black;
     opacity: 0.9;
-}
-
-.projectDuration {
-    color: #6A6A6A;
-}
-
-.projectDuration:hover {
-    color: #628BCD;
 }
 
 .projectImage {
