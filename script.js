@@ -10,7 +10,7 @@ $(document).ready(function() {
     var previousScroll = 0;
     var changeNavColor = 1;
     var navChange = $('.firstSection').offset().top;
-    navChange = navChange - 68;
+    navChange = navChange - 90;
     navChange = Math.floor(navChange);
 
     $(document).on('scroll', function(event) {

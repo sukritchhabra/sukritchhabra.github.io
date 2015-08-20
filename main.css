@@ -71,7 +71,7 @@ section a:focus {
     text-decoration: none;
 }
 
-section a:hover {
+section a:hover:not(.showButton a) {
     color: #0E70A7;
     text-decoration: none;
 }
@@ -114,25 +114,54 @@ section a:hover {
     margin-top: 2em;
 }
 
-.projectTitle,
-.jobTitle {
+.item {
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.item {
+    padding: 3em 0 3em 0 !important;
+}
+
+.itemTitle {
+    margin: 0;
     font-weight: bolder;
 }
 
-.projectDuration,
-.jobDuration {
+.itemDuration {
     color: #6A6A6A;
 }
 
-.projectDuration:hover,
-.jobDuration:hover {
+.itemDuration:hover {
     color: #628BCD;
 }
 
-.jobLocation {
+/*Company Logos*/
+
+.drexelLogo {
     display: inline-block;
     width: 15em;
     padding: 1em;
+}
+
+.mjLogo {
+    display: inline-block;
+    width: 5em;
+    padding: 1em;
+    border-radius: 30%;
+}
+
+.plLogo {
+    display: inline-block;
+    width: 10em;
+    padding: 1em;
+}
+
+.jobBody {
+    padding-top: 1em !important;
+}
+
+.jobBody .description a {
+    color: #BB0820;
 }
 
 .projectLinks {
