@@ -71,7 +71,7 @@ section a:focus {
     text-decoration: none;
 }
 
-section a:hover:not(.showButton a) {
+section a:hover {
     color: #0E70A7;
     text-decoration: none;
 }
