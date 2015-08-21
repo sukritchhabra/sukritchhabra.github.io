@@ -305,6 +305,9 @@ span.more {
 
 #footer .links .fa {
     font-size: 1.5em;
-    margin-right: 0.5em;
     color: white;
+}
+
+#footer .links .fa:not(.fa-facebook-official) {
+    margin-right: 0.5em;
 }
