@@ -39,7 +39,6 @@ $(document).ready(function() {
     });
 
     $window.on("mousewheel DOMMouseScroll", function(event){
-
         event.preventDefault();
 
         var delta = event.originalEvent.wheelDelta/80 || -event.originalEvent.detail/3;
@@ -51,7 +50,6 @@ $(document).ready(function() {
                 ease: Power1.easeOut,
                 overwrite: 5
             });
-
     });
 
     $('.moreButton').on('click', function(event) {
