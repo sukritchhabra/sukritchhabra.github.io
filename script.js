@@ -3,6 +3,10 @@
 /*global $, jQuery, alert*/
 
 $(document).ready(function() {
+    $.get('/nav/footer.html', function(data) {
+        $('.addFooterHere').after(data);
+    });
+
     var $window = $(window);
     var scrollTime = 0.1;
     var scrollDistance = 70;
