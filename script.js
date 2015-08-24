@@ -4,7 +4,9 @@
 
 $(document).ready(function() {
     $.get('/nav/footer.html', function(data) {
-        $('.addFooterHere').after(data);
+        $('.addFooterHere')
+            .after(data)
+            .remove();
     });
 
     var $window = $(window);
