@@ -186,6 +186,7 @@ section a:hover {
 .projectImage img {
     width: 70%;
     border-radius: 0.5em;
+    box-shadow: 0 0 30px -7px rgba(0,0,0,1);
 }
 
 .projectBody div {
