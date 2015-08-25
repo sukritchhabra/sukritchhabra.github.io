@@ -3,12 +3,39 @@
 /*global $, jQuery, alert*/
 
 $(document).ready(function() {
+
     $.ajax({
       url: "/nav/footer.html",
       type: "GET"
     }).done(function( data ) {
         $('.addFooterHere')
             .after(data)
+            .remove();
+    });
+
+    $.ajax({
+      url: "/projects/index.html",
+      type: "GET"
+    }).done(function( data ) {
+        var showOthersButton = '';
+        showOthersButton = showOthersButton + '<div class="row showOthers">';
+        showOthersButton = showOthersButton + '<div>';
+        showOthersButton = showOthersButton + '<a href="http://sukritchhabra.com/projects"><button class="showButton">View all projects<span class="fa fa-external-link"></span></button></a>';
+        showOthersButton = showOthersButton + '</div>';
+        showOthersButton = showOthersButton + '</div>';
+        
+        var newData = $(data).find('section').parent();
+        newData.find('.row').each(function(index, el) {
+            if (index !== 0) {
+                console.log($(this));
+                $(this).remove();
+            }
+        });
+
+        newData.find('.wrappingSectionContent').append(showOthersButton);
+
+        $('.addProjectsHere')
+            .after(newData)
             .remove();
     });
 
@@ -61,7 +88,7 @@ $(document).ready(function() {
             });
     });
 
-    $('.moreButton').on('click', function(event) {
+    $('body').on('click', '.moreButton', function(event) {
         $(this).siblings('.more').slideToggle('400', function() {
             $(this).css('display', 'block');
         });
@@ -71,7 +98,7 @@ $(document).ready(function() {
         $(this).slideToggle('100');
     });
 
-    $('.lessButton').on('click', function(event) {
+    $('body').on('click', '.lessButton', function(event) {
         $(this).siblings('.more').slideToggle('400');
         $(this).siblings('.moreButton').slideToggle('400', function() {
             $(this).css('display', 'block');
