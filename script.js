@@ -3,7 +3,10 @@
 /*global $, jQuery, alert*/
 
 $(document).ready(function() {
-    $.get('/nav/footer.html', function(data) {
+    $.ajax({
+      url: "/nav/footer.html",
+      type: "GET"
+    }).done(function( data ) {
         $('.addFooterHere')
             .after(data)
             .remove();
