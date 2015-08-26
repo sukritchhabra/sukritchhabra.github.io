@@ -27,7 +27,6 @@ $(document).ready(function() {
         var newData = $(data).find('section').parent();
         newData.find('.row').each(function(index, el) {
             if (index !== 0) {
-                console.log($(this));
                 $(this).remove();
             }
         });

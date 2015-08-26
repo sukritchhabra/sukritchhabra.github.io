@@ -76,7 +76,7 @@ section a:hover {
     text-decoration: none;
 }
 
-.container div {
+.container div:not(.itemHeader) {
     padding: 0 2em;
 }
 

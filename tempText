@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Sukrit Chhabra</title>
+        <meta name="description" content="Student at Drexel University, Philadelphia. Major: Computer Science,
+                                            Minor: Mathematics">
+        <meta name="keywords" content="Sukrit,Chhabra,CS,Drexel,Philadelphia,HTML,CSS,Javascript,JS,Computer,Science">
+        <meta name="author" content="Sukrit Chhabra">
+
+        <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap-theme.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    <!-- jQuery                     -->
+        <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>                                <!-- Bootstrap JS               -->
+        <script src="parallax/parallax.js"></script>                                                <!-- Parallax JS                -->
+        <script src="smoothScroll/smooth-scroll.js"></script>                                       <!-- Smooth Scroll to Anchor JS -->
+        <script src="https://cdn.rawgit.com/sukritchhabra/opacityChangeOnScroll/master/opacityChangeOnScroll.js"></script>
+        <script src="script.js"></script>                                                           <!-- Our JS                     -->
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <div class="homeButton">
+                <ul>
+                    <li><a data-scroll="" href="#jumbotron"><span class="fa fa-home"></span></a></li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <ul>
+                    <li><a data-scroll="" href="#education">Education</a></li>
+                    <li><a data-scroll="" href="#experience">Experience</a></li>
+                    <li><a data-scroll="" href="#projects">Projects</a></li>
+                    <li>Skills</li>
+                    <li><a data-scroll="" href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="jumbotron" class="jumbotron">
+        </div>
+
+
+        <!--
+        div.container>section#experience>h3+(div.container>div.row>div.col-md-4.thumbnail*3)
+        -->
+
+        <div class="container wrappingSection">
+            <section id="education" class="firstSection">
+                <h1>Education</h1>
+                <div class="container wrappingSectionContent">
+                    <div class="row">
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://www.drexel.edu/" target="_blank"><img src="imgs/logoDU.png" alt=""></a>
+                            <h2>2013-2016</h2>
+                        </div>
+
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://manipal.edu/mu.html" target="_blank"><img src="imgs/logoMU.png" alt=""></a>
+                            <h2>2011-2013</h2>
+                        </div>
+
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://www.tsrs.org/" target="_blank"><img src="imgs/logoTSRS.png" alt=""></a>
+                            <h2>2001-2011</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container wrappingSection">
+            <section id="experience">
+                <h1>Experience</h1>
+                <div class="item row">
+                    <div class="itemHeader row">
+                        <div class="col-md-8">
+                                <h2 class="itemTitle jobTitle"><a href="http://www.drexel.edu/excite/people/a-z/workgroup/chhabra/" target="_blank">Research Assistant and Web Developer</a></h2>
+                                <h4 class="workplace"><a href="http://www.drexel.edu/excite/" target="_blank">ExCITe Center, Drexel University</a></h4>
+                                <h4 class="itemDuration jobDuration">March 2015 - September 2015</h4>
+                        </div>
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://drexel.edu/" target="_blank" title="Drexel University"><img class="jobLogo drexelLogo" src="imgs/logoDU.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="itemBody jobBody row">
+                            <h3>Description</h3>
+                            <div class="description">
+                                <p>
+                                    Worked as Research Assistant and Web Developer  as part of the <a href="http://openhtml.org" target="_blank">openHTML</a> team with <a href="http://andreaforte.net" target="_blank">Dr. Andrea Forte</a> and <a href="http://thomaspark.co" target="_blank">Dr. Thomas Park</a> at the ExCITe Center at Drexel University.
+                                </p>
+                            </div>
+
+                            <h3>Responsibilities</h3>
+                            <div class="resposibilities">
+                                <ul>
+                                    <li>Developer on the <a data-scroll="" href="#snowball">Snowball</a> project</li>
+                                    <li>Conducted IRB approved research with Drexel student run newspaper, The Triangle</li>
+                                    <li>Collected data for the Nester study led by Dr. Andrea Forte and Dr. Thomas Park</li>
+                                </ul>
+                            </div>
+
+                            <button class="more-less-button moreButton">More about this project</button>
+                            <span class="more">
+                                <h3>Inception</h3>
+                                <div class="inception">
+                                    <p>
+                                        Our inspiration for this project was The New York Times' Snowfall article, which came out in 2012 and adopted an interactive and immersive way of storytelling to create a brilliant piece of journalism.<br><br>
+
+                                        Even then, NYT had a complete technical team to develop that article which a local news organization might not have. Our goal, was to give journalists and journalism organizations a tool that made it fairly simple to create immersive and minimalistic articles on the web. Our aim was also to conduct research with journalists around this tool that we built.<br><br>
+
+                                        We realized that a lot of journalists and organizations use WordPress and decided to build a WordPress plugin that would bring this functionality to the user.<br><br>
+
+                                        While doing this we wanted to keep things modular for a user and decided to give them a block-wise structure to build a webpage with. That way a user works only with a block at a certain point of time and the development of the whole webpage isn't their focus.<br><br>
+
+                                        One of the more difficult questions we had to answer was "What is the level of abstraction we want to create between a user and the code?" Running through various use-cases in various itereations of the design process we came up with out current design where a user can jump into the code of the block they're building instantly and have access to the block's HTML and CSS and edit it inside Snowball itself.<br><br>
+
+                                        One other feature we were very certain we wanted was the live perview. As developers we understand its importance and wanted to bring that to our users. But the bigger question was whether we give the user a block-wise preview or a preview of the complete webpage? In our design process we realized that a page preview wasn't ideal and didn't comply with our modular structure and hence, today we have a block wise live preview.<br><br>
+
+                                        We have also constantly been in touch with a team at Mozilla because of our idealogical similarites with their Webmaker project. Right now we are working with Drexels student run newspaper, The Triangle to do a study with Snowball.
+                                    </p>
+                                </div>
+                            </span>
+                            <button class="more-less-button lessButton">Less</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    <div class="item row">
+                        <div class="col-md-8">
+                                <h2 class="itemTitle jobTitle"><a href="http://www.midnightjabber.com" target="_blank">Co-Founder/Developer</a></h2>
+                                <h4 class="itemDuration jobDuration">December 2013 -</h4>
+
+                                <div class="itemBody jobBody">
+                                    <h3>Description</h3>
+                                    <div class="description">
+                                        <p>
+                                            Co-Founded the website and developed it. Am part of many projects built under MidnightJabber.
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://www.midnightjabber.com" target="_blank" title="Midnight Jabber"><img class="jobLogo mjLogo" src="imgs/logoMJ.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="item row">
+                        <div class="col-md-8">
+                                <h2 class="itemTitle jobTitle"><a href="http://www.punjlloyd.com/" target="_blank">Intern</a></h2>
+                                <h4 class="itemDuration jobDuration">May 2010</h4>
+
+                                <div class="itemBody jobBody">
+                                    <h3>Description</h3>
+                                    <div class="description">
+                                        <p>
+                                            Was part of a team that had an inter-disciplinary function. Learned the ropes of how each department functions idividualy, and with other departments.
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-4 thumbnail">
+                            <a href="http://www.punjlloyd.com/" target="_blank" title="Midnight Jabber"><img class="jobLogo plLogo" src="imgs/logoPL.jpg" alt=""></a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <span class="addprojectsHere" style="display: none;"></span>
+
+        <span class="addFooterHere" style="display: none;"></span>
+
+        <script>
+          smoothScroll.init({
+              speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+              easing: 'Linear', // Easing pattern to use
+          });
+        </script>
+    </body>
+</html>
