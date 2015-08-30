@@ -31,7 +31,6 @@ nav {
     background-color: none !important;
 }
 
-
 nav a,
 nav a:hover,
 nav a:focus {
@@ -152,11 +151,7 @@ section a:hover {
     padding-top: 1em !important;
 }
 
-.jobBody .description a {
-    color: #BB0820;
-}
-
-.resposibilities a {
+.jobBody a {
     color: #BB0820;
 }
 
@@ -212,6 +207,10 @@ section a:hover {
     border: none;
     border-radius: 3px;
     color: white;
+}
+
+.howWeBegan a {
+    color: #BB0820;
 }
 
 .lessButton {

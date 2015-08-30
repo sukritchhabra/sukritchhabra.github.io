@@ -36,6 +36,23 @@ $(document).ready(function() {
         $('.addProjectsHere')
             .after(newData)
             .remove();
+
+        $('body').trigger('loadHWBs');
+    });
+
+    $('body').on('loadHWBs', function(event) {
+        $('.loadHWB').each(function(index, el) {
+            var block = $(this);
+            var projectName = block.data('project');
+            var getURL = '../hwb/hwb_' + projectName + '.html';
+
+            $.ajax({
+                url: getURL,
+                type: "GET"
+            }).done(function( data ) {
+                block.find('p').append(data);
+            });
+        });
     });
 
     var $window = $(window);
