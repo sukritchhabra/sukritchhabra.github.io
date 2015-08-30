@@ -133,19 +133,27 @@
 
                             <button class="more-less-button moreButton">More about this project</button>
                             <span class="more">
-                                <h3>Purpose</h3>
+                                <h3>How We Began</h3>
                                 <div class="purpose">
-                                    <ul>
-                                        <li>Create a fun game as a Web App</li>
-                                        <li>People who are not regulars on Twitter should enjoy the game</li>
-                                        <li>Game should be engaging, fun, frustrating and surprising at the same time</li>
-                                    </ul>
+                                    <p>
+                                        One evening while on a skype session with my friend, we were thinking about cool prjects we had ideas for. That is when we came up with the Twitter Game. Generic name, I know but let's move on.<br><br>
+
+                                        The idea was to recreate the 'Match the following' quizes we took in school as kids with celebrities and their tweets. The idea evolved and and the game process was thought of. We decided we would give a player 10 users and 10 tweets and jumble 'em up. To increase randomness and novelty, we would grab a Celebs 200 tweets and grab a random one from these 200 everytime and pass it to the table.<br><br>
+
+                                        It seemed like such a simple idea! Until we started working with the Twitter API. We had a working prototype very soon and it was in no way perfect! For loading 10 users and their tweets, the load time was about <b>20 seconds!</b> We knew from the beggining that this was a problem that needed to be solved.<br><br>
+
+                                        Another problem we realized, although very late, was that the Twitter API only allowed us to make 180 calls in 15 minutes! Our game was never going to work... Over a very long conversation we had, we found our solution to all the major problems we were facing. <b><i>A Database</i></b>. 
+
+                                        Having a database allowed us to store a celebrities tweets and grab them from our database instead of Twitter's for a player. Our database would grab all celebrities' latest tweets everyday or so and store them for a player. Also instead of doing calculations and forming the JSON for the game on the client side we decided to handle it on the server itself.<br><br>
+
+                                        These alterations allowed us to have the game you see today. We still have some of the issues from the above process up on Github, but, we our much closer to out goal.
+                                    </p>
                                 </div>
 
                                 <h3>Other People who were a part of this project</h3>
                                 <div class="people">
                                     <ul>
-                                        <li><a href="http://vishrutreddi.com/"><img src="https://pbs.twimg.com/profile_images/608889976084832256/HX_nRhqq_400x400.jpg" alt=""><p>Vishrut Reddi</p></a></li>
+                                        <li><a href="http://vishrutreddi.com/"><img src="/imgs/people/vishrut.jpg" alt=""><p>Vishrut Reddi</p></a></li>
                                     </ul>
                                 </div>
                             </span>
