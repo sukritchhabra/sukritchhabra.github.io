@@ -4,7 +4,7 @@ The idea was to recreate the 'Match the following' quizes we took in school as k
 
 It seemed like such a simple idea! Until we started working with the Twitter API. We had a working prototype very soon and it was in no way perfect! For loading 10 users and their tweets, the load time was about <b>20 seconds!</b> We knew from the beggining that this was a problem that needed to be solved.<br><br>
 
-Another problem we realized, although very late, was that the Twitter API only allowed us to make 180 calls in 15 minutes! Our game was never going to work... Over a very long conversation we had, we found our solution to all the major problems we were facing. <b><i>A Database</i></b>. 
+Another problem we realized, although very late, was that the Twitter API only allowed us to make 180 calls in 15 minutes! Our game was never going to work... Over a very long conversation we had, we found our solution to all the major problems we were facing. <b>A Database</b>. 
 
 Having a database allowed us to store a celebrities tweets and grab them from our database instead of Twitter's for a player. Our database would grab all celebrities' latest tweets everyday or so and store them for a player. Also instead of doing calculations and forming the JSON for the game on the client side we decided to handle it on the server itself.<br><br>
 

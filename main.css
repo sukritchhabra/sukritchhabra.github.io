@@ -17,7 +17,7 @@ body {
     display: inline;
     opacity: 1;
     color: white;
-    font-size: 1vw;
+    font-size: 1em;
     font-weight: bold;
     margin-right: 2vw;
 }
@@ -211,6 +211,11 @@ section a:hover {
 
 .howWeBegan a {
     color: #BB0820;
+}
+
+.howWeBegan b {
+    font-weight: 900;
+    color: #008000;
 }
 
 .lessButton {
