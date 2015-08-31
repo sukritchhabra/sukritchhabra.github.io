@@ -87,7 +87,7 @@ $(document).ready(function() {
     });
 
     $(document).on('navBlack', function() {
-        $('nav').css('background-color', '#111');
+        $('nav').css('background-color', '#000');
     });
 
     $window.on("mousewheel DOMMouseScroll", function(event){
