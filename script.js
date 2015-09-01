@@ -26,14 +26,14 @@ $(document).ready(function() {
         
         var newData = $(data).find('section').parent();
         newData.find('.row').each(function(index, el) {
-            if (index !== 0) {
+            if ($(this).attr('id') !== $('.addProjectHere').data('project')) {
                 $(this).remove();
             }
         });
 
         newData.find('.wrappingSectionContent').append(showOthersButton);
 
-        $('.addProjectsHere')
+        $('.addProjectHere')
             .after(newData)
             .remove();
 
