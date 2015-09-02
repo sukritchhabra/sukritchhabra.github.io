@@ -248,11 +248,15 @@ span.more {
 
 
 
-
-
 /* Button that navigates to a different page for more information */
 .showOthers {
     border: none !important;
+}
+
+.showOthers a:focus,
+.showOthers a:hover {
+    color: white;
+    border: none;
 }
 
 .showButton {
