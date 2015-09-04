@@ -10,6 +10,7 @@ $(document).ready(function() {
     newHTML = newHTML + '<div class="container wrappingSection">';
     newHTML = newHTML + '    <div class="row">';
     var opacityEnd = 80;
+    var opacityStart = 10;
 
 
     $('.loadProjectTile').each(function(index, el) {
@@ -18,12 +19,16 @@ $(document).ready(function() {
         var projectTitle = block.data('title');
         var imageURL = projectName + '/blogPageImage.jpg';
 
-        newHTML = newHTML + '<div class="thumbnail increase-on-scroll-down" data-start="10" data-end="' + opacityEnd + '"><a href="http://sukritchhabra.com/blog/' + projectName + '" target="_blank"><img src="' + imageURL + '"></a><p>'+ projectTitle +'</p></div>';
+        newHTML = newHTML + '<div class="thumbnail increase-on-scroll-down" data-start="' + opacityStart + '" data-end="' + opacityEnd
+                                + '"><a href="http://sukritchhabra.com/blog/' + projectName + '" target="_blank"><img src="'
+                                + imageURL + '"></a><p>'+ projectTitle +'</p></div>';
         opacityEnd = opacityEnd - 5;
+        opacityStart = opacityStart +5;
         if ((index+1)%4 == 0 && index != numberOfPosts) {
             newHTML = newHTML + '    </div>';
             newHTML = newHTML + '    <div class="row">';
             opacityEnd = 80;
+            opacityStart = 10;
         } else if (index == numberOfPosts) {
             newHTML = newHTML + '    </div>';
             newHTML = newHTML + '</div>';
