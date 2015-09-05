@@ -4,14 +4,41 @@
 
 $(document).ready(function() {
 
-    var numberOfPosts = $('.loadProjectTile').length - 1;
+    var $window = $(window);
+    var scrollTime = 0.1;
+    var scrollDistance = 70;
 
+    /* Smooth scrolling effect. NOTE: This is not scrolling to a link, this is for general smooth scrolling. */
+    $(window).on("mousewheel DOMMouseScroll", function(event){
+        event.preventDefault();
+
+        var delta = event.originalEvent.wheelDelta/80 || -event.originalEvent.detail/3;
+        var scrollTop = $window.scrollTop();
+        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+        TweenMax.to($window, scrollTime, {
+            scrollTo : { y: finalScroll, autoKill:true },
+                ease: Power1.easeOut,
+                overwrite: 5
+            });
+    });
+
+    $.ajax({
+      url: "../nav/footer.html",
+      type: "GET"
+    }).done(function( data ) {
+        $('.addFooterHere')
+            .after(data)
+            .remove();
+    });
+
+    
+    var numberOfPosts = $('.loadProjectTile').length - 1;
+    var opacityEnd = 80;
+    var opacityStart = 10;
     var newHTML = '';
     newHTML = newHTML + '<div class="container wrappingSection">';
     newHTML = newHTML + '    <div class="row">';
-    var opacityEnd = 80;
-    var opacityStart = 10;
-
 
     $('.loadProjectTile').each(function(index, el) {
         var block = $(this);
