@@ -60,26 +60,26 @@ nav a:focus {
 }
 
 .jumbotron p {
-  color: white;
-  font-family: "Courier";
-  font-size: 3em !important;
-  margin: 5em auto 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 9em;
-  animation: type 2s steps(15, end);
+    color: white;
+    font-family: "Courier";
+    font-size: 3em !important;
+    margin: 5em auto 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 9em;
+    animation: type 2s steps(15, end);
 }
 
 .jumbotron p span {
-  animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 
 @keyframes type {
-  from { width: 0; }
+    from { width: 0; }
 }
 
 @keyframes blink {
-  to{opacity: .0;}
+    to{opacity: .0;}
 }
 
 .thumbnail {

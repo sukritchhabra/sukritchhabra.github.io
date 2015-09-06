@@ -32,7 +32,6 @@ $(document).ready(function() {
             .remove();
     });
 
-    
     var numberOfPosts = $('.loadProjectTile').length - 1;
     var opacityEnd = 80;
     var opacityStart = 10;
