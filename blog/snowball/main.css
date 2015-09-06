@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.jumbotron {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 2em;
+    background-image: url('../imgs/jumbo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+/*    background-color: #2887CA;*/
+    padding-bottom: 0px;
+}
+
+.thumbnail {
+    width: 25%;
+    display: inline-block;
+    padding: 0.7em;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.thumbnail img {
+    border-radius: 0.3em;
+}
+
+.thumbnail p {
+    font-size: 1.3em;
+    padding-top: 0.2em;
+}
+
+/* Footer */
+#footer {
+    padding: 2em;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#footer .row {
+    margin-bottom: 0.5em;
+}
+
+#footer .name {
+    font-size: 1.3em;
+}
+
+#footer .links .fa {
+    font-size: 1.5em;
+    color: white;
+}
+
+#footer .links .fa:not(.fa-facebook-official) {
+    margin-right: 0.5em;
+}
+
+.name {
+    padding: 0 !important;
+}
