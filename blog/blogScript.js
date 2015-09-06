@@ -43,7 +43,7 @@ $(document).ready(function() {
         var block = $(this);
         var projectName = block.data('project');
         var projectTitle = block.data('title');
-        var imageURL = projectName + '/blogPageImage.jpg';
+        var imageURL = projectName + '/imgs/blogPageImage.jpg';
 
         newHTML = newHTML + '<div class="thumbnail increase-on-scroll-down" data-start="' + opacityStart + '" data-end="' + opacityEnd
                                 + '"><a href="http://sukritchhabra.com/blog/' + projectName + '" target="_blank"><img src="'
