@@ -55,9 +55,6 @@ $(document).ready(function() {
         });
     });
 
-    var $window = $(window);
-    var scrollTime = 0.1;
-    var scrollDistance = 70;
 
     var previousScroll = 0;
     var changeNavColor = 1;
@@ -90,6 +87,9 @@ $(document).ready(function() {
         $('nav').css('background-color', '#000');
     });
 
+    var $window = $(window);
+    var scrollTime = 0.1;
+    var scrollDistance = 70;
     $window.on("mousewheel DOMMouseScroll", function(event){
         event.preventDefault();
 
