@@ -79,6 +79,10 @@ section a:hover {
     padding: 0 2em;
 }
 
+.wrappingSection:last-of-type {
+    margin-bottom: 10em;
+}
+
 #education .thumbnail img{
     height: 7vh !important;
     width: auto;
@@ -98,6 +102,10 @@ section a:hover {
 #education .thumbnail:hover,
 #experience .thumbnail:hover {
     transform: scale(1.1,1.1); /* Standard syntax */
+}
+
+#projects {
+    border-bottom: solid 1px #f4f4f4;
 }
 
 #projects .row {
@@ -283,6 +291,29 @@ span.more {
 .brackets {
     color: #D8D8DC;
 }
+
+
+/* Skills */
+.listElement {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.listElement img {
+    width: 4.5em;
+    border-radius: 5px;
+}
+
+.listElement img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+    .listElement {
+        margin-bottom: 2em;
+    }
+}
+
 
 /* Footer */
 #footer {
