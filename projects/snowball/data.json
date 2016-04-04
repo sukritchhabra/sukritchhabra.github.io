@@ -5,6 +5,7 @@
         "wordpress": "https://wordpress.org/plugins/snowball/"
     },
     "title": "Snowball",
+    "website": "http://snowball.openhtml.org/",
     "duration": "March 2015 - September 2015",
     
     "description": "<b>Snowball</b> is <i>WordPress plugin</i> that makes it possible for anyone to create immersive articles for the web. Snowball tries to hit the sweet spot between <u><i>easy Graphical Editors</i></u> and <u><i>powerful Code Editors</i></u> giving a user complete control over the customization of a webpage while maintining enough abstraction to not make the development process too overwhelming.",
