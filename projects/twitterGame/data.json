@@ -1,0 +1,20 @@
+{
+    "id": "twitterGame",
+    "links": {
+        "github": "https://github.com/MidnightJabber/twitterGame",
+        "globe": "http://tweety.midnightjabber.com"
+    },
+    "title": "Twitter Game",
+    "website": "http://tweety.midnightjabber.com",
+    "duration": "July 2015 -",
+    
+    "description": "This project is a Twitter Game where users match celebs to their tweets. The idea was to have a game where we re-created the <b><i>'Match the following'</i></b> quiz's we took as kids with celebrities and their tweets.",
+    
+    "people": [
+        {
+            "link": "http://vishrutreddi.com/",
+            "img": "/imgs/people/vishrut.jpg",
+            "person": "Vishrut Reddi"
+        }
+    ]
+}
