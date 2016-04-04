@@ -25,7 +25,7 @@ $(document).ready(function() {
             success: function (response) {
                 projectJSON = response;
                 console.log(projectJSON);
-                createProjectMarkup(projectJSON, '#projects .wrappingSectionContent')
+                createProjectMarkup(projectJSON, '#projects .wrappingSectionContent');
             },
             error: function (errorReport) {
                 console.log('Error happened while trying to retrieve ' + projectName + '!');

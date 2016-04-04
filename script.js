@@ -13,32 +13,33 @@ $(document).ready(function() {
             .remove();
     });
 
-    $.ajax({
-      url: "/projects/index.html",
-      type: "GET"
-    }).done(function( data ) {
-        var showOthersButton = '';
-        showOthersButton = showOthersButton + '<div class="row showOthers">';
-        showOthersButton = showOthersButton + '<div>';
-        showOthersButton = showOthersButton + '<a href="http://sukritchhabra.com/projects"><button class="showButton">View all projects<span class="fa fa-external-link"></span></button></a>';
-        showOthersButton = showOthersButton + '</div>';
-        showOthersButton = showOthersButton + '</div>';
-        
-        var newData = $(data).find('section').parent();
-        newData.find('.row').each(function(index, el) {
-            if ($(this).attr('id') !== $('.addProjectHere').data('project')) {
-                $(this).remove();
+    if ($('.addProjectHere').length > 0) {
+        var projectName = $('.addProjectHere').data('project');
+        var projectJSON;
+
+        $.ajax({
+            url: "projects/" + projectName + "/data.json",
+            type: "GET",
+            async: false,
+            success: function (response) {
+                projectJSON = response;
+                console.log(projectJSON);
+                createProjectMarkup(projectJSON, '#projects .wrappingSectionContent');
+
+                var showOthersButton = '';
+                showOthersButton = showOthersButton + '<div class="row showOthers">';
+                showOthersButton = showOthersButton + '<div>';
+                showOthersButton = showOthersButton + '<a href="http://sukritchhabra.com/projects"><button class="showButton">View all projects<span class="fa fa-external-link"></span></button></a>';
+                showOthersButton = showOthersButton + '</div>';
+                showOthersButton = showOthersButton + '</div>';
+
+                $('#projects .wrappingSectionContent').append(showOthersButton);
+            },
+            error: function (errorReport) {
+                console.log('Error happened while trying to retrieve ' + projectName + '!');
             }
         });
-
-        newData.find('.wrappingSectionContent').append(showOthersButton);
-
-        $('.addProjectHere')
-            .after(newData)
-            .remove();
-
-        $('body').trigger('loadHWBs');
-    });
+    }
 
     $('body').on('loadHWBs', function(event) {
         $('.loadHWB').each(function(index, el) {
