@@ -48,7 +48,7 @@ function createProjectMarkup(projectData, addTo) {
     html = html + '        </div>';
     }
 
-    if (projectData.people.length > 0) {
+    if (projectData.people != undefined) {
     html = html + '        <button class="more-less-button moreButton">More about this project</button>';
     html = html + '        <span class="more">';
 
