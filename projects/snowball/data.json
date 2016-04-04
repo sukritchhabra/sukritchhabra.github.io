@@ -2,7 +2,8 @@
     "id": "snowball",
     "links": {
         "github": "https://github.com/thomaspark/snowball",
-        "wordpress": "https://wordpress.org/plugins/snowball/"
+        "wordpress": "https://wordpress.org/plugins/snowball/",
+        "globe": "http://snowball.openhtml.org/"
     },
     "title": "Snowball",
     "website": "http://snowball.openhtml.org/",
