@@ -1,0 +1,12 @@
+{
+    "id": "opacityChangeOnScroll",
+    "links": {
+        "github": "https://github.com/sukritchhabra/opacityChangeOnScroll",
+        "globe": "http://sukritchhabra.com/opacityChangeOnScroll/"
+    },
+    "title": "opacityChangeOnScroll.js",
+    "website": "http://sukritchhabra.com/opacityChangeOnScroll/",
+    "duration": "March 2015",
+    
+    "description": "<b>opacityChangeOnScroll</b> is <i>Javascript/jQuery library</i> that makes it really easy for a user to bind the opacity<span class=\"brackets\">(currently. Thinking about supporting other properties too)</span> of an element on the page to the scroll event by just assigning HTML classes."
+}
