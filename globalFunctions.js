@@ -18,7 +18,7 @@ function createProjectMarkup(projectData, addTo) {
     html = html + '    <h4 class="projectDuration">' + projectData.duration + '</h4>';
 
     html = html + '    <div class="projectImage">';
-    html = html + '        <a href="' + projectData.website + '" target="_blank"><img src="' + projectData.id  + '/image.jpg' + '" alt=""></a>';
+    html = html + '        <a href="' + projectData.website + '" target="_blank"><img src="http://sukritchhabra.com/projects/' + projectData.id  + '/image.jpg' + '" alt=""></a>';
     html = html + '    </div>';
 
     html = html + '    <div class="itemBody projectBody">';
