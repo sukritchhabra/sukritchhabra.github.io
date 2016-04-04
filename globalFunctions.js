@@ -35,6 +35,7 @@ function createProjectMarkup(projectData, addTo) {
     }
 
 
+    if (projectData.highlights != undefined) {
     html = html + '        <h3>Highlight</h3>';
     html = html + '        <div class="highlight">';
     html = html + '            <ul>';
@@ -45,6 +46,7 @@ function createProjectMarkup(projectData, addTo) {
 
     html = html + '            </ul>';
     html = html + '        </div>';
+    }
 
     if (projectData.people.length > 0) {
     html = html + '        <button class="more-less-button moreButton">More about this project</button>';
