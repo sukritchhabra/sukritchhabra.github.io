@@ -1,0 +1,38 @@
+{
+    "id": "diggly",
+    "links": {
+        "github": "https://github.com/WikiDiggly",
+        "globe": "http://diggly.xyz/"
+    },
+    "title": "Diggly",
+    "website": "http://diggly.xyz/",
+    "duration": "September 2015 - June 2016",
+
+    "description": "Diggly is a visual Wikipedia explorer representing information from Wikipedia using graphs and simplified information, with little text. With Diggly, the innate ‘free-flow text’ characteristic of Wikipedia encyclopedia becomes a last resort. Instead, users of Diggly will be presented with the same information as Wikipedia and the powerful capacity to navigate related topics through condensed, easily consumed and aesthetically pleasing user interactions. This intuitive linked information is represented visually through graphs and other natural models of linked-data visualization.",
+
+    "people": [
+        {
+            "link": "http://halimaola.net/",
+            "img": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/005/047/19f/3e884f5.jpg",
+            "person": "Halima Olipade"
+        },
+
+        {
+            "link": "https://www.linkedin.com/in/brandon-him-5a194b90?authType=name&authToken=yfLb&trk=prof-proj-cc-name",
+            "img": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJDA5NGE4MGJmLTI4MGQtNDE0NC04ZjEyLTkxYzJjZjBiNTg4Nw.jpg",
+            "person": "Brandon Him"
+        },
+
+        {
+            "link": "https://www.linkedin.com/in/meetakshay",
+            "img": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAT9AAAAJGE4NzYwNzNiLWFkYmYtNGU4Yy1hY2ZhLTgxNDlhNzgxOTM2MA.jpg",
+            "person": "Akshay Sharma"
+        },
+
+        {
+            "link": "https://www.linkedin.com/in/ayomidecole",
+            "img": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/06d/051/38ba465.jpg",
+            "person": "Ayomide Cole"
+        }
+    ]
+}
