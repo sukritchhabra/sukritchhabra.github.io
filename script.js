@@ -112,7 +112,7 @@ $(document).ready(function() {
         $(this).siblings('.lessButton').slideToggle('400', function() {
             $(this).css('display', 'block');
         });
-        $(this).slideToggle('100');
+        $(this).toggle();
     });
 
     $('body').on('click', '.lessButton', function(event) {
@@ -120,6 +120,6 @@ $(document).ready(function() {
         $(this).siblings('.moreButton').slideToggle('400', function() {
             $(this).css('display', 'block');
         });
-        $(this).slideToggle('100');
+        $(this).toggle();
     });
 });
