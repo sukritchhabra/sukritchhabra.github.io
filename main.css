@@ -99,11 +99,6 @@ section a:hover {
     text-align: center;
 }
 
-#education .thumbnail:hover,
-#experience .thumbnail:hover {
-    transform: scale(1.1,1.1); /* Standard syntax */
-}
-
 #projects {
     border-bottom: solid 1px #f4f4f4;
 }
