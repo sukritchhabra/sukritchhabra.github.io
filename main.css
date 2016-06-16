@@ -7,6 +7,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+button:focus {
+    outline: none;
+}
+
 .navbar {
     margin-bottom: 0px;
     background-color: none !important;
