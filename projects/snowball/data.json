@@ -8,13 +8,13 @@
     "title": "Snowball",
     "website": "http://snowball.openhtml.org/",
     "duration": "March 2015 - September 2015",
-    
+
     "description": "<b>Snowball</b> is <i>WordPress plugin</i> that makes it possible for anyone to create immersive articles for the web. Snowball tries to hit the sweet spot between <u><i>easy Graphical Editors</i></u> and <u><i>powerful Code Editors</i></u> giving a user complete control over the customization of a webpage while maintining enough abstraction to not make the development process too overwhelming.",
     "builtAs": {
         "link": "http://drexel.edu/excite/people/a-z/alumni/chhabra/",
         "as": "Research Assistant and Web Developer, Drexel University"
     },
-    
+
     "highlights": [
         {
             "link": "http://blog.jquery.com/2015/09/23/jquery-foundation-web-excellence-program-powered-by-jquery/",
@@ -23,7 +23,7 @@
 
         {
             "link": "https://wordpress.org/plugins/snowball/",
-            "highlight": "As of April 25th, Snowball has 1500+ unique downloads and 100+ active installs from the WordPress plugin repository."
+            "highlight": "As of December 2016, Snowball has 3000+ unique downloads from the WordPress plugin repository."
         }
     ],
 
