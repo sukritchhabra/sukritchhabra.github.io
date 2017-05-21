@@ -141,6 +141,11 @@ section a:hover {
     padding: 1em;
 }
 
+.exciteLogo {
+    margin-top: -1em;
+    width: 11em;
+}
+
 .dlLogo {
     width: 12em;
 }
