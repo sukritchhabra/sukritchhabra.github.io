@@ -178,6 +178,10 @@ section a:hover {
     font-size: 1.4em;
 }
 
+.projectLinks a:hover{
+    color: black;
+}
+
 .projectLinks span {
     opacity: 0.5;
     margin: 0 0.3em;
