@@ -141,6 +141,10 @@ section a:hover {
     padding: 1em;
 }
 
+.dlLogo {
+    width: 12em;
+}
+
 .mjLogo {
     display: inline-block;
     width: 7em;
