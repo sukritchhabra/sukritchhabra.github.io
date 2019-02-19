@@ -1,4 +1,0 @@
-sukritchhabra.github.io
-=======================
-
-Portfolio
