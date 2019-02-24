@@ -5,7 +5,7 @@ exports[`Header.jsx matches snapshot 1`] = `
   className="header"
 >
   <h1>
-    ReactTemplate
+    Sukrit Chhabra
   </h1>
 </div>
 `;

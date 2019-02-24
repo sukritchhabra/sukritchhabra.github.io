@@ -4,7 +4,7 @@ import 'styles/Header.scss';
 
 const Header = () => (
   <div className="header">
-    <h1>ReactTemplate</h1>
+    <h1>Sukrit Chhabra</h1>
   </div>
 );
 

@@ -7,9 +7,10 @@ describe('Header.jsx', () => {
 
   test('renders', () => {
     expect(wrapper.exists()).toBeTruthy();
+
     const header = wrapper.find('h1');
     expect(header).toHaveLength(1);
-    expect(header.text()).toEqual('ReactTemplate');
+    expect(header.text()).toEqual('Sukrit Chhabra');
   });
 
   test('matches snapshot', () => {
