@@ -3,11 +3,15 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // Copy assets to /docs
+
 const webpack = require('webpack');
 
-const CopyWebpackPlugin = require('copy-webpack-plugin'); // Copy assets to /docs
+const { NODE_ENV } = process.env;
+const IS_PROD = NODE_ENV === 'production';
+const IS_DEV = NODE_ENV === 'development';
 
 module.exports = {
   entry: {
@@ -36,10 +40,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        }))
+        use: [
+          'css-hot-loader',
+          { loader: MiniCssExtractPlugin.loader },
+          'css-loader',
+          'sass-loader'
+        ],
       },
       {
         test: /\.(png|jpe?g|svg)$/,
@@ -92,9 +98,18 @@ module.exports = {
       template: require('html-webpack-template'), // eslint-disable-line
       appMountId: 'content'
     }),
-    new ExtractTextPlugin('styles.css'),
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new webpack.DefinePlugin({
+      APP_CONFIG: {
+        ENV: JSON.stringify(process.env.NODE_ENV),
+        PROD: JSON.stringify('production'),
+        DEV: JSON.stringify('development'),
+        IS_PROD: JSON.stringify(IS_PROD),
+        IS_DEV: JSON.stringify(IS_DEV),
+      }
+    }),
     new Dotenv({
       path: './.env',
     }),

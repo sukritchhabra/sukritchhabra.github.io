@@ -8,8 +8,4 @@ const Header = () => (
   </div>
 );
 
-const Sum = (a, b) => a + b;
-
 export default Header;
-
-export { Sum };
