@@ -1,11 +1,11 @@
 import React from 'react';
 
-import 'styles/Header.scss';
+import './Header.scss';
 
 const Header = () => (
-  <div className="header">
+  <nav className="navbar">
     <h1>Sukrit Chhabra</h1>
-  </div>
+  </nav>
 );
 
 export default Header;

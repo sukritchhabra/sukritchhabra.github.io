@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import SampleActions, { selectValue } from 'state/sample';
-import 'styles/Counter.scss';
+import './Counter.scss';
 
 // A basic counter component connected to the redux store.
 const Counter = (props) => {
