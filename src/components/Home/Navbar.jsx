@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './Header.scss';
+import './Navbar.scss';
 
-const Header = () => (
+const Navbar = () => (
   <nav className="navbar">
     <h1>Sukrit Chhabra</h1>
   </nav>
 );
 
-export default Header;
+export default Navbar;

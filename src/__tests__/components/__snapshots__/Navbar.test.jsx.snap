@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header.jsx matches snapshot 1`] = `
-<div
-  className="header"
+exports[`Navbar.jsx matches snapshot 1`] = `
+<nav
+  className="navbar"
 >
   <h1>
     Sukrit Chhabra
   </h1>
-</div>
+</nav>
 `;

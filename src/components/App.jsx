@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from 'components/Header';
+import Home from 'components/Home';
 // import { Route, Link } from 'react-router-dom';
 
 const App = () => (
   <div className="app-container">
-    <Header />
+    <Home />
   </div>
 );
 
