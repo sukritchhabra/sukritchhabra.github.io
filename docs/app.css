@@ -8,6 +8,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1d222f;
     color: white; }
     html body a {
       color: white;
@@ -17,11 +18,9 @@ html {
         text-decoration: none; }
     html body #content {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      background-color: #1d222f; }
       html body #content > * {
         width: 100%;
         height: 100%; }
-
-body {
-  background-color: #12181b; }
 
