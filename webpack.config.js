@@ -76,6 +76,7 @@ module.exports = {
       components: path.resolve(__dirname, 'src/components'),
       state: path.resolve(__dirname, 'src/state'),
       styles: path.resolve(__dirname, 'src/components/styles'),
+      utils: path.resolve(__dirname, 'src/utils'),
       images: path.resolve(__dirname, 'src/assets/images'),
     },
     extensions: ['.js', '.jsx']
@@ -92,11 +93,14 @@ module.exports = {
     new CleanWebpackPlugin(['docs']),
     new CopyWebpackPlugin([{ from: './src/assets/images', to: 'assets/images' }]),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Sukrit Chhabra',
       inject: false,
       chunks: ['app'],
       template: require('html-webpack-template'), // eslint-disable-line
-      appMountId: 'content'
+      appMountId: 'content',
+      meta: [
+        { name: 'viewport', content: 'width=device-width' }
+      ],
     }),
     new MiniCssExtractPlugin({ filename: '[name].css' }),
     new webpack.HotModuleReplacementPlugin(),
