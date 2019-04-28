@@ -18,7 +18,7 @@ class App extends Component {
 
   browserResized = utils.debounce(({ target: { innerWidth } }) => {
     this.props.updateBrowserWidth(innerWidth);
-  }, 1000);
+  }, 200);
 
   render() {
     return (
