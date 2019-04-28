@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Home from 'components/Home';
 import Navbar from 'components/Navbar';
-// import { Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import BrowserActions from 'state/browser';
 import { utils } from 'utils/index';
 
 class App extends Component {
+  browserResized = utils.debounce(({ target: { innerWidth } }) => {
+    const { updateBrowserWidth } = this.props;
+    updateBrowserWidth(innerWidth);
+  }, 200);
+
   componentDidMount() {
     window.addEventListener('resize', this.browserResized);
   }
@@ -16,9 +20,6 @@ class App extends Component {
     window.removeEventListener('resize', this.browserResized);
   }
 
-  browserResized = utils.debounce(({ target: { innerWidth } }) => {
-    this.props.updateBrowserWidth(innerWidth);
-  }, 200);
 
   render() {
     return (
