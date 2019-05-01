@@ -36,3 +36,8 @@ export const selectCurrentJob = createSelector(
   selectJobs,
   jobs => jobs.find(job => job.isCurrent),
 );
+
+export const selectJobTitles = createSelector(
+  selectJobs,
+  jobs => jobs.map(job => job.position),
+);
