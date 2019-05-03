@@ -42,14 +42,23 @@ const StyledFlex = styled(Flex)`
   max-width: ${sizes.phone}px;
 `;
 
+const StyledLink = styled(Link)`
+  && {
+    color: #b9c8d0;
+    &:hover {
+      color: #dedede;
+    }
+  }
+`;
+
 const SocialProfiles = ({ socialProfiles }) => (
   <StyledWrapper>
     <StyledFlex flexDirectionMobile="row">
       { socialProfiles.map(({ icon, link }, idx) => (
         <ProfileWrapper className="profile-wrapper" key={`profile-wrapper-${idx}`}>
-          <Link href={link}>
+          <StyledLink href={link}>
             <div className="icon"><FontAwesomeIcon icon={icon} /></div>
-          </Link>
+          </StyledLink>
         </ProfileWrapper>
       ))}
     </StyledFlex>

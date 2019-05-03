@@ -8,11 +8,10 @@ import { show, slideInFromLeft } from 'styles/animations';
 
 import Flex from 'components/Flex';
 import styled from 'styled-components';
-import { sizes } from 'utils/media';
 
 const StyledWrapper = styled.div`
   margin: 5em auto;
-  min-width: ${sizes.phone}px;
+  width: 100%;
   text-align: center;
 
   .name {
