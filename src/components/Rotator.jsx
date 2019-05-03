@@ -23,10 +23,30 @@ const StyledDiv = styled.div`
     transform: translateZ(-${({ zTranslate }) => zTranslate}px);
     transition: transform ${({ delay }) => ((delay - 1000) / 1000)}s;
 
-    &.show-1 { transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(0deg); }
-    &.show-2 { transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-90deg); }
-    &.show-3 { transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-180deg); }
-    &.show-4 { transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-270deg); }
+    .side {
+      transition: opacity 0.5s;
+    }
+
+    &.show-1 {
+      transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(0deg);
+      .side-1 { opacity: 1; }
+    }
+
+    &.show-2 {
+      transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-90deg);
+      .side-2 { opacity: 1; }
+    }
+
+    &.show-3 {
+      transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-180deg);
+      .side-3 { opacity: 1; }
+    }
+
+    &.show-4 {
+      transform: translateZ(-${({ zTranslate }) => zTranslate}px) rotateX(-270deg);
+      .side-4 { opacity: 1; }
+    }
+
   }
 
   .side {
@@ -43,6 +63,8 @@ const StyledDiv = styled.div`
 
     border: solid 0.5px white;
     border-radius: 3px;
+
+    opacity: 0;
   }
   .side { ${({ sideCss }) => sideCss && sideCss} }
 
