@@ -123,7 +123,7 @@ class Rotator extends Component {
         { halfHeight && (
           <StyledDiv zTranslate={halfHeight.toString()} sideCss={sideCss} delay={delay}>
             <div className={`cube show-${displaySide}`}>
-              {sidesFour.map((content, idx) => <div className={`side side-${idx + 1}`}>{content}</div>)}
+              {sidesFour.map((content, idx) => <div key={`side-${idx}`} className={`side side-${idx + 1}`}>{content}</div>)}
             </div>
           </StyledDiv>
         )

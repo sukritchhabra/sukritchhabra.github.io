@@ -1,28 +1,19 @@
 import React from 'react';
-import Flex from 'components/Flex';
-import Divider from 'components/Divider';
 
-import HomeLeft from 'components/HomeLeft';
+import Landing from 'components/Landing';
+import SocialProfiles from 'components/SocialProfiles';
 import styled from 'styled-components';
 
 const HomeWrapper = styled.div`
   &.home {
-    .left, .right {
-      flex: 1;
-      text-align: center;
-    }
+    height: 100%;
   }
 `;
 
 const Home = () => (
   <HomeWrapper className="home">
-    <Flex>
-      <div className="left"><HomeLeft /></div>
-
-      <Divider vertical size="95" />
-
-      <div className="right">Right</div>
-    </Flex>
+    <Landing />
+    <SocialProfiles />
   </HomeWrapper>
 );
 

@@ -33,7 +33,8 @@
       "components": ["Link"],
       "specialLink": ["to"],
       "aspects": ["noHref", "invalidHref", "preferButton"]
-    }]
+    }],
+    "react/no-array-index-key": ["off"]
   },
 
   "settings": {

@@ -1,4 +1,4 @@
-import { createReducer, createActions } from 'reduxsauce';
+import { createReducer } from 'reduxsauce';
 import { createSelector } from 'reselect';
 import Immutable from 'seamless-immutable';
 import dataInfo from 'data';
@@ -7,22 +7,15 @@ const INITIAL_STATE = Immutable({
   data: [...dataInfo.jobs],
 });
 
-const { Types, Creators } = createActions({
-  updateBrowserWidth: ['width'],
-});
+// const { Types, Creators } = createActions({});
 
-export const JobsTypes = Types; // JobsTypes
-export default Creators; // SampleActions
+// export const JobsTypes = Types; // Types
+// export default Creators; // Actions
 
-// Reducers
-const updateBrowserWidth = (state, { width }) => state.merge({
-  width,
-});
+// // Reducers
 
-// Relate Action Types to reducers
-export const reducer = createReducer(INITIAL_STATE, {
-  [JobsTypes.UPDATE_BROWSER_WIDTH]: updateBrowserWidth,
-});
+// // Relate Action Types to reducers
+export const reducer = createReducer(INITIAL_STATE, {});
 
 // Selectors
 const selectBase = state => state.jobs;
@@ -34,7 +27,7 @@ export const selectJobs = createSelector(
 
 export const selectCurrentJob = createSelector(
   selectJobs,
-  jobs => jobs.find(job => job.isCurrent),
+  jobs => jobs.find(job => job.isCurrent) || {},
 );
 
 export const selectJobTitles = createSelector(

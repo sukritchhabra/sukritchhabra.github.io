@@ -1,16 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rotator from 'components/Rotator';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { selectCurrentJob, selectJobTitles } from 'state/jobs';
+
+import { selectJobTitles } from 'state/jobs';
 import { show, slideInFromLeft } from 'styles/animations';
 
+import Flex from 'components/Flex';
+import styled from 'styled-components';
+import { sizes } from 'utils/media';
+
 const StyledWrapper = styled.div`
-  margin: 5em 2em;
+  margin: 5em auto;
+  min-width: ${sizes.phone}px;
+  text-align: center;
+
   .name {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.5rem;
     animation:
       ${slideInFromLeft} 1.5s ease-out,
       ${show} 3s ease-out;
@@ -35,27 +42,26 @@ const RotatorWrapper = styled.div`
   margin: 1em 0;
   width: 100%;
   height: 50px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 `;
 
-const HomeLeft = ({ currentJob, jobTitles }) => (
-  <StyledWrapper>
-    <h1 className="name">Sukrit Chhabra</h1>
-    <RotatorWrapper className="title-rotator">
-      <Rotator sides={jobTitles} sideCss="border: none" delay={2000} />
-    </RotatorWrapper>
-    <h3 className="company">{currentJob.company}</h3>
-  </StyledWrapper>
+const Landing = ({ jobTitles }) => (
+  <Flex width="100%" height="75%" flexDirectionMobile="row">
+    <StyledWrapper>
+      <h1 className="name">Sukrit Chhabra</h1>
+      <RotatorWrapper className="title-rotator">
+        <Rotator sides={jobTitles} sideCss="border: none" delay={2000} />
+      </RotatorWrapper>
+    </StyledWrapper>
+  </Flex>
 );
 
-HomeLeft.propTypes = {
-  currentJob: PropTypes.shape({}).isRequired,
+Landing.propTypes = {
   jobTitles: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 const mapStateToProps = state => ({
-  currentJob: selectCurrentJob(state),
   jobTitles: selectJobTitles(state),
 });
 
-export default connect(mapStateToProps)(HomeLeft);
+export default connect(mapStateToProps)(Landing);

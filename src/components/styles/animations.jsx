@@ -5,6 +5,11 @@ export const slideInFromLeft = keyframes`
   100% { transform: translateX(0); }
 `;
 
+export const slideInFromRight = keyframes`
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+`;
+
 export const show = keyframes`
   0% {
     visibility: hidden;
@@ -19,5 +24,6 @@ export const show = keyframes`
 
 export default {
   slideInFromLeft,
+  slideInFromRight,
   show,
 };
