@@ -56,7 +56,7 @@ const SocialProfiles = ({ socialProfiles }) => (
     <StyledFlex flexDirectionMobile="row">
       { socialProfiles.map(({ icon, link }, idx) => (
         <ProfileWrapper className="profile-wrapper" key={`profile-wrapper-${idx}`}>
-          <StyledLink href={link}>
+          <StyledLink isIcon href={link}>
             <div className="icon"><FontAwesomeIcon icon={icon} /></div>
           </StyledLink>
         </ProfileWrapper>

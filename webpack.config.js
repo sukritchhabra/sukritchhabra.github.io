@@ -67,6 +67,18 @@ module.exports = {
             },
           }
         ]
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'files/[hash]-[name].[ext]'
+            }
+          },
+        ]
       }
     ]
   },
@@ -79,8 +91,9 @@ module.exports = {
       utils: path.resolve(__dirname, 'src/utils'),
       data: path.resolve(__dirname, 'src/data'),
       images: path.resolve(__dirname, 'src/assets/images'),
+      files: path.resolve(__dirname, 'src/assets/files'),
     },
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.svg', '.png', '.jpg', '.pdf']
   },
 
   devServer: {
