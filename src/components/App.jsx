@@ -6,7 +6,6 @@ import BrowserActions from 'state/browser';
 import { utils } from 'utils/index';
 
 import Home from 'components/Home';
-import Resume from 'components/Resume';
 
 class App extends Component {
   browserResized = utils.debounce(({ target: { innerWidth } }) => {
@@ -26,8 +25,7 @@ class App extends Component {
     return (
       <div className="app-container">
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/resume" component={Resume} />
+          <Route path="/" component={Home} />
         </Switch>
       </div>
     );

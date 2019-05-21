@@ -8,7 +8,9 @@ import { show, slideInFromLeft } from 'styles/animations';
 
 import Flex from 'components/Flex';
 import Link from 'components/Link';
+import Resume from 'files/Resume';
 import styled from 'styled-components';
+
 
 const StyledWrapper = styled.div`
   margin: 5em auto;
@@ -31,6 +33,7 @@ const StyledWrapper = styled.div`
   }
 
   .resume {
+    border-radius: 3px;
     visibility: hidden;
     animation:
       ${slideInFromLeft} 1.5s ease-out 1s,
@@ -52,7 +55,7 @@ const Landing = ({ jobTitles }) => (
       <RotatorWrapper className="title-rotator">
         <Rotator sides={jobTitles} sideCss="border: none" delay={2000} />
       </RotatorWrapper>
-      <Link className="resume" to="/resume" target="_self" isRouterLink>Resume</Link>
+      <Link className="resume" href={`/${Resume}`} target="_self">Resume</Link>
     </StyledWrapper>
   </Flex>
 );
