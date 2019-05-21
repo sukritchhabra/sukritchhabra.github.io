@@ -12,6 +12,33 @@ const webpack = require('webpack');
 const { NODE_ENV } = process.env;
 const IS_PROD = NODE_ENV === 'production';
 const IS_DEV = NODE_ENV === 'development';
+// const IS_GITHUB = NODE_ENV === 'github';
+
+const ENV_DATA_MAP = {
+  production: {
+    indexFilename: 'index.html',
+    output: {
+      publicPath: '',
+    },
+  },
+
+  development: {
+    indexFilename: 'index.html',
+    output: {
+      publicPath: '',
+    },
+  },
+
+  github: {
+    indexFilename: '../index.html',
+    output: {
+      publicPath: './docs/',
+    },
+  },
+};
+
+const DERIVED_ENV = NODE_ENV || 'production';
+const ENV_DATA = { ...ENV_DATA_MAP[DERIVED_ENV] };
 
 module.exports = {
   entry: {
@@ -24,7 +51,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: ''
+    publicPath: ENV_DATA.output.publicPath,
   },
 
   module: {
@@ -108,6 +135,7 @@ module.exports = {
     new CopyWebpackPlugin([{ from: './src/assets/images', to: 'assets/images' }]),
     new HtmlWebpackPlugin({
       title: 'Sukrit Chhabra',
+      filename: ENV_DATA.indexFilename,
       inject: false,
       chunks: ['app'],
       template: require('html-webpack-template'), // eslint-disable-line
@@ -121,7 +149,7 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.DefinePlugin({
       APP_CONFIG: {
-        ENV: JSON.stringify(process.env.NODE_ENV),
+        ENV: JSON.stringify(DERIVED_ENV),
         PROD: JSON.stringify('production'),
         DEV: JSON.stringify('development'),
         IS_PROD: JSON.stringify(IS_PROD),
