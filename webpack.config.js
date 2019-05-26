@@ -37,7 +37,7 @@ const ENV_DATA_MAP = {
   },
 };
 
-const DERIVED_ENV = NODE_ENV || 'production';
+const DERIVED_ENV = (NODE_ENV && ENV_DATA_MAP[NODE_ENV]) ? NODE_ENV : 'production';
 const ENV_DATA = { ...ENV_DATA_MAP[DERIVED_ENV] };
 
 module.exports = {
