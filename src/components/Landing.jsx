@@ -11,6 +11,19 @@ import Link from 'components/Link';
 import Resume from 'files/Resume';
 import styled from 'styled-components';
 
+/**
+ * Animation Shorthand
+ *
+ * ${slideInFromLeft} 1.5s ease-out 0.5s,
+ * ${show} 3s ease-out 1s 1 normal forwards
+ *
+ * animation-name: example;
+ * animation-duration: 5s;
+ * animation-timing-function: linear;
+ * animation-delay: 2s;
+ * animation-iteration-count: infinite;
+ * animation-direction: alternate;
+ */
 
 const StyledWrapper = styled.div`
   margin: 5em auto;

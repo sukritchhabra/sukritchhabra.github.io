@@ -7,7 +7,7 @@ import Flex from 'components/Flex';
 import Link from 'components/Link';
 
 import { selectSocial } from 'state/info';
-import { show, slideInFromRight } from 'styles/animations';
+import { show } from 'styles/animations';
 
 import { media, sizes } from 'utils/media';
 import styled from 'styled-components';
@@ -16,9 +16,7 @@ const StyledWrapper = styled.div`
   margin: 5em auto;
 
   .profile-wrapper {
-    animation:
-      ${slideInFromRight} 1.5s ease-out,
-      ${show} 3s ease-out;
+    animation: ${show} 3s ease-out;
   }
 `;
 
