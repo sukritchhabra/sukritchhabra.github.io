@@ -9,7 +9,7 @@ const jobs = [
   {
     company: 'Ycenter',
     isCurrent: false,
-    position: 'Front End Enginer',
+    position: 'Front End Engineer',
   },
 
   {
